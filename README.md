@@ -19,12 +19,18 @@
 
 <br/><br/>
 
-<!-- PLACEHOLDER 1: main demo GIF — record 10-15s of browse → customize → checkout -->
-<img src="assets/demo.gif" alt="Platform demo" width="800"/>
+<!-- Hero image — clicking it opens the full video demo -->
+<a href="https://youtu.be/3d6BjJUqbvA">
+  <img src="assets/gallery.png" alt="Arttno — wedding card sets gallery (click to watch the full demo)" width="800"/>
+</a>
 
 <br/>
 
-🔗 **[Visit the live platform](https://YOUR-LIVE-URL-HERE.com)** &nbsp;·&nbsp; 📬 [Contact me](mailto:nurfarah.dev@gmail.com)
+🎬 **[Watch the full 3-minute demo on YouTube](https://youtu.be/3d6BjJUqbvA)**
+
+<br/>
+
+🔗 **[Visit the live platform](https://arttno.me/)** &nbsp;·&nbsp; 📬 [Contact me: nurfarah.dev@gmail.com](mailto:nurfarah.dev@gmail.com)
 
 </div>
 
@@ -48,14 +54,19 @@ The platform's differentiator — customers can generate unique card designs ins
 2. A **prompt enhancement pipeline using the Claude API** rewrites it into an optimized Stable Diffusion prompt
 3. **Cloudflare Workers AI** generates the design (Stable Diffusion for image-to-image generation, **LLaMA 3.2 Vision** for image analysis)
 
-<!-- PLACEHOLDER 2: screenshot of AI generation flow — before prompt / after result -->
-<div align="center"><img src="assets/ai-generation.png" alt="AI design generation" width="800"/></div>
+<div align="center">
+  <img src="assets/ai-generator.png" alt="AI design generator form" width="420"/>
+  <img src="assets/ai-result.png" alt="AI-generated design result" width="420"/>
+  <br/><sub><i>Left: the customer describes their design &nbsp;·&nbsp; Right: the AI-generated result, ready to order</i></sub>
+</div>
 
 ### 📦 State-Machine Order Lifecycle
 Orders move through a **state-machine-driven lifecycle** with a full audit history of every transition. Customers can self-service cancel within allowed states — this design eliminated a whole class of order-status disputes and reduced support overhead.
 
-<!-- PLACEHOLDER 3: screenshot of order tracking / status page -->
-<div align="center"><img src="assets/order-lifecycle.png" alt="Order lifecycle" width="800"/></div>
+<div align="center">
+  <img src="assets/order-tracking.png" alt="Order tracking with status timeline" width="500"/>
+  <br/><sub><i>Customer order tracking — progress bar and status timeline driven by the state machine</i></sub>
+</div>
 
 ### 💳 Secure Payment Integration
 - **ToyyibPay** payment gateway integration
@@ -66,8 +77,10 @@ Orders move through a **state-machine-driven lifecycle** with a full audit histo
 - Admin dashboard (Vue.js 3) for managing card templates
 - **Multer-based image upload** pipeline for template assets
 
-<!-- PLACEHOLDER 4: screenshot of admin dashboard (use demo/fake data — no real customer info!) -->
-<div align="center"><img src="assets/admin-dashboard.png" alt="Admin dashboard" width="800"/></div>
+<div align="center">
+  <img src="assets/admin-dashboard.png" alt="Admin dashboard with analytics" width="800"/>
+  <br/><sub><i>Admin dashboard — revenue trends, payment method breakdown, customer growth & pending-action alerts</i></sub>
+</div>
 
 ---
 
